@@ -179,15 +179,32 @@
       <h1>My work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
-        <button class="category__btn active">All<span class="category__count">6</span></button>
-        <button class="category__btn">Personal<span class="category__count">3</span></button>
-        <button class="category__btn">Team<span class="category__count">3</span></button>
+        <button class="category__btn active" data-filter="*">
+          All<span class="category__count">6</span></button>
+        <button class="category__btn" data-filter="personal">
+          Personal<span class="category__count">3</span></button>
+        <button class="category__btn" data-filter="team">
+          Team<span class="category__count">3</span></button>
       </div>
     <div class="work__projects">
-      <a href="" class="project" target="blank">
+      <a href="" class="project" target="blank" data-type="personal">
         <img class="project__img" src="" alt="">
         <div class="project__description">
-          <h3>프로젝트명</h3>
+          <h3>프로젝트명1</h3>
+          <span>사용 기술 스택</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank" data-type="team">
+        <img class="project__img" src="" alt="">
+        <div class="project__description">
+          <h3>프로젝트명2</h3>
+          <span>사용 기술 스택</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank" data-type="personal">
+        <img class="project__img" src="" alt="">
+        <div class="project__description">
+          <h3>프로젝트명3</h3>
           <span>사용 기술 스택</span>
         </div>
       </a>
